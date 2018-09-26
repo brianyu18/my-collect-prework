@@ -2,9 +2,8 @@ def my_collect(array)
   i = 0
   nuarray = []
   while i < array.length
-    yield (array[i])
-    nuarray << array[i]
+    nuarray << yield (array[i])
   end
-array
+nuarray
 end
 
